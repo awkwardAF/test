@@ -8,13 +8,13 @@ public class ClassTestTask02 {
         String a = sc.next();
         int sum = a.charAt(0) - 48;
         for (int i = 1; i < a.length();
-             i = i + 2) {
-            if (a.charAt(i) == '+') {
-                sum += a.charAt(i + 1) - 48;
+             i += 2) {
+            if (a.charAt(i) == "-") {
+                sum -= a.charAt(i + 1) - 48;
             }
             else {
-                if (a.charAt(i) == '-') {
-                    sum -= a.charAt(i + 1) - 48;
+                if (a.charAt(i) == "+") {
+                    sum += a.charAt(i + 1) - 48;
                 }
             }
         }
